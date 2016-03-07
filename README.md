@@ -1,5 +1,5 @@
 # Docker Ulbora Mongo
-- 1.0.0, latest[ (Dockerfile)](https://github.com/Ulbora/docker_alpine_mongodb/blob/1.0.0/Dockerfile)
+- 1.0.0, latest[ (Dockerfile)](https://github.com/Ulbora/docker_ulboracms_mongo/blob/master/Dockerfile)
 
 This is Docker Ulbora Mongo running on Debian
 
