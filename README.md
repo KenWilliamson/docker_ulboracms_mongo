@@ -22,7 +22,7 @@ ulboramongo -d ulboralabs/ulboracms-mongo
 
 ```
 docker run --name some-ulboracms-web-app \
---link some-mongodb-container-name:mongo -d  ulboralabs/ulboracms sh
+--link some-mongodb-container-name:mongo --env DOCKER_ULBORACMS_DATABASE_NAME=ulboracmsdb -d  ulboralabs/ulboracms sh
 ```
 
 # About linking to a mongo container
