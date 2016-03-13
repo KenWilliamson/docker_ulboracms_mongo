@@ -11,13 +11,13 @@ docker run -v /data/db:/data/db -v /databackup:/databackup --name \
 ulboramongo -d ulboralabs/ulboracms-mongo
 ```
 
-###Then run the database restore script
+### Then run the database restore script
 
 ```
  docker exec -it ulboramongo bash /db.sh
 ```
 
-#Linking to a mongo container
+# Linking to a mongo container
 ### The link to your mongodb container should always end with :mongo as shown below
 
 ```
@@ -25,7 +25,7 @@ docker run --name some-ulboracms-web-app \
 --link some-mongodb-container-name:mongo -d  ulboralabs/ulboracms sh
 ```
 
-#About linking to a mongo container
+# About linking to a mongo container
 The :mongo is an alias that produces an environment variable named MONGO_PORT_27017_TCP_ADDR inside the web container.
 If :mongo were to be changed to :mongodb, then the environment variable would be named MONGODB_PORT_27017_TCP_ADDR and 
 Ulbora CMS would not connect the the mongo database. Ulbora CMS needs the environment variable to be 
