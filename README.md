@@ -16,6 +16,15 @@ ulboramongo -d ulboralabs/ulboracms-mongo
 ```
  docker exec -it ulboramongo bash /db.sh
 ```
+If you restore this database, log in with:
+user=admin
+password=admin
+Make sure to change the password as soon as you finish the installation.
+#### Default credential on a new installation:
+user=admin
+password=admin
+Make sure to change the password as soon as you finish the installation.
+
 
 # Linking to a mongo container
 ### The link to your mongodb container should always end with :mongo as shown below
